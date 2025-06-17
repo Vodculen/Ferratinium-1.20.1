@@ -1,0 +1,26 @@
+{
+	"item.ferratinium.ferronyx": "Ferronyx",
+	"item.ferratinium.raw_platiniam": "Raw Platiniam",
+	"item.ferratinium.platiniam_ingot": "Platiniam Ingot",
+
+	"item.ferratinium.ferronyx_sword": "Ferronyx Sword",
+	"item.ferratinium.ferronyx_axe": "Ferronyx Axe",
+	"item.ferratinium.ferronyx_dagger": "Ferronyx Dagger",
+
+	"item.ferratinium.platiniam_helmet": "Platiniam Helmet",
+	"item.ferratinium.platiniam_chestplate": "Platiniam Chestplate",
+	"item.ferratinium.platiniam_leggings": "Platiniam Leggings",
+	"item.ferratinium.platiniam_boots": "Platiniam Boots",
+
+	"block.ferratinium.ferronyx_ore": "Ferronyx Ore",
+	"block.ferratinium.deepslate_ferronyx_ore": "Deepslate Ferronyx Ore",
+	"block.ferratinium.deepslate_platiniam_ore": "Deepslate Platiniam Ore",
+	"block.ferratinium.ferronyx_block": "Ferronyx Block",
+	"block.ferratinium.ferronyx_stairs": "Ferronyx Stairs",
+	"block.ferratinium.ferronyx_slab": "Ferronyx Slab",
+	"block.ferratinium.ferronyx_wall": "Ferronyx Wall",
+	"block.ferratinium.ferronyx_pressure_plate": "Ferronyx Pressure Plate",
+	"block.ferratinium.ferronyx_button": "Ferronyx Button",
+
+	"itemgroup.ferratinium.ferratinium_item_group": "Ferratinium"
+}

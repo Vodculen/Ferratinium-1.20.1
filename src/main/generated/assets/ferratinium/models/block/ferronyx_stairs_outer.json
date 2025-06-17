@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "ferratinium:block/ferronyx_block",
+    "side": "ferratinium:block/ferronyx_block",
+    "top": "ferratinium:block/ferronyx_block"
+  }
+}

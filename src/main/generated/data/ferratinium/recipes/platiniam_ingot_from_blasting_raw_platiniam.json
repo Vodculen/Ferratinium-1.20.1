@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 10.0,
+  "group": "platiniam",
+  "ingredient": {
+    "item": "ferratinium:raw_platiniam"
+  },
+  "result": "ferratinium:platiniam_ingot"
+}

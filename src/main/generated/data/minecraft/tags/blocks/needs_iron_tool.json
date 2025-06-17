@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ferratinium:ferronyx_ore",
+    "ferratinium:deepslate_ferronyx_ore",
+    "ferratinium:deepslate_platiniam_ore",
+    "ferratinium:ferronyx_block"
+  ]
+}
