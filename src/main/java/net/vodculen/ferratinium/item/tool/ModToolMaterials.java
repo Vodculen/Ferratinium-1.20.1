@@ -7,7 +7,8 @@ import net.minecraft.recipe.Ingredient;
 import net.vodculen.ferratinium.item.ModItems;
 
 public enum ModToolMaterials implements ToolMaterial {
-	FERRONYZ_MATERIAL(2, 256, 6.0F, 2.5F, 14, () ->  Ingredient.ofItems(ModItems.FERRONYX));
+	FERRONYX_MATERIAL(2, 256, 6.0F, 2.5F, 14, () ->  Ingredient.ofItems(ModItems.FERRONYX)),
+	FERRATINIUM_MATERIAL(4, 1012, 7.0F, 2.5F, 18, () ->  Ingredient.ofItems(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT));
 
 	private final int miningLevel;
 	private final int itemDurability;
@@ -25,26 +26,32 @@ public enum ModToolMaterials implements ToolMaterial {
 		this.repairIngredient = repairIngredient;
 	}
 
+	@Override
 	public int getDurability() {
 		return this.itemDurability;
 	}
 	
+	@Override
 	public float getMiningSpeedMultiplier() {
 		return this.miningSpeed;
 	}
 
+	@Override
 	public float getAttackDamage() {
 		return this.attackDamage;
 	}
 
-   public int getMiningLevel() {
+	@Override
+	public int getMiningLevel() {
 		return this.miningLevel;
 	}
 
+	@Override
 	public int getEnchantability() {
 		return this.enchantability;
 	}
 
+	@Override
 	public Ingredient getRepairIngredient() {
 		return this.repairIngredient.get();
 	}

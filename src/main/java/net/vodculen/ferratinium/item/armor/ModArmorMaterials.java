@@ -12,7 +12,10 @@ import net.vodculen.ferratinium.item.ModItems;
 
 public enum ModArmorMaterials implements ArmorMaterial {
 	PLATINIAM("platiniam", 30, new int[] { 4, 7, 10, 4 }, 20, 
-		SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2f, 03F, () -> Ingredient.ofItems(ModItems.PLATINIAM_INGOT))
+		SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0F, 0.1F, () -> Ingredient.ofItems(ModItems.PLATINIAM_INGOT))
+	,
+	FERRATINIUM("ferratinium", 40, new int[] { 5, 8, 12, 5 }, 25, 
+			SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.2F, () -> Ingredient.ofItems(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT))
 	;
 
    	private static final int[] BASE_DURABILITY = {13, 15, 16, 11};

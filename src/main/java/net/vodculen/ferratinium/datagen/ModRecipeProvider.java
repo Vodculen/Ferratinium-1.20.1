@@ -16,6 +16,8 @@ import net.vodculen.ferratinium.item.ModItems;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
 	private static final List<ItemConvertible> PLATINIAM = List.of(ModItems.RAW_PLATINIAM);
+	private static final List<ItemConvertible> ENERGIZED_FERRONYX = List.of(ModItems.ENERGIZED_FERRONYX);
+
 	public ModRecipeProvider(FabricDataOutput output) {
 		super(output);
 	}
@@ -26,10 +28,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 		offerBlasting(exporter, PLATINIAM, RecipeCategory.MISC, ModItems.PLATINIAM_INGOT, 10, 100, "platiniam");
 		offerSmelting(exporter, PLATINIAM, RecipeCategory.MISC, ModItems.PLATINIAM_INGOT, 5, 200, "platiniam");
+		offerBlasting(exporter, ENERGIZED_FERRONYX, RecipeCategory.MISC, ModItems.ENERGIZED_FERRONYX_INGOT, 10, 200, "energized_ferronyx");
 
 		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FERRONYX_SWORD)
-			.pattern("###")
-			.pattern(" | ")
+			.pattern(" # ")
+			.pattern(" # ")
 			.pattern(" | ")
 			.input('#', ModItems.FERRONYX)
 			.input('|', Items.STICK)
@@ -48,9 +51,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 			;
 
 		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FERRONYX_DAGGER)
-			.pattern("  #")
+			.pattern("   ")
 			.pattern(" # ")
-			.pattern("|  ")
+			.pattern(" | ")
 			.input('#', ModItems.FERRONYX)
 			.input('|', Items.STICK)
 			.criterion(hasItem(ModItems.FERRONYX), conditionsFromItem(ModItems.FERRONYX))
@@ -95,6 +98,72 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 			.pattern("   ")
 			.input('#', ModItems.PLATINIAM_INGOT)
 			.criterion(hasItem(ModItems.PLATINIAM_INGOT), conditionsFromItem(ModItems.PLATINIAM_INGOT))
+			.offerTo(exporter)
+			;
+
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FERRATINIUM_HELMET)
+			.pattern("###")
+			.pattern("# #")
+			.pattern("   ")
+			.input('#', ModItems.CRYSTALLIZED_FERRATINIUM_INGOT)
+			.criterion(hasItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT), conditionsFromItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT))
+			.offerTo(exporter)
+			;
+
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FERRATINIUM_CHESTPLATE)
+			.pattern("# #")
+			.pattern("###")
+			.pattern("###")
+			.input('#', ModItems.CRYSTALLIZED_FERRATINIUM_INGOT)
+			.criterion(hasItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT), conditionsFromItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT))
+			.offerTo(exporter)
+			;
+
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FERRATINIUM_LEGGINGS)
+			.pattern("###")
+			.pattern("# #")
+			.pattern("# #")
+			.input('#', ModItems.CRYSTALLIZED_FERRATINIUM_INGOT)
+			.criterion(hasItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT), conditionsFromItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT))
+			.offerTo(exporter)
+			;
+
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FERRATINIUM_BOOTS)
+			.pattern("# #")
+			.pattern("# #")
+			.pattern("   ")
+			.input('#', ModItems.CRYSTALLIZED_FERRATINIUM_INGOT)
+			.criterion(hasItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT), conditionsFromItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT))
+			.offerTo(exporter)
+			;
+
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FERRATINIUM_SWORD)
+			.pattern(" # ")
+			.pattern(" # ")
+			.pattern(" | ")
+			.input('#', ModItems.CRYSTALLIZED_FERRATINIUM_INGOT)
+			.input('|', Items.STICK)
+			.criterion(hasItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT), conditionsFromItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT))
+			.offerTo(exporter)
+			;
+		
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FERRATINIUM_AXE)
+			.pattern(" ##")
+			.pattern(" |#")
+			.pattern(" | ")
+			.input('#', ModItems.CRYSTALLIZED_FERRATINIUM_INGOT)
+			.input('|', Items.STICK)
+			.criterion(hasItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT), conditionsFromItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT))
+			.offerTo(exporter)
+			;
+
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FERRATINIUM_DAGGER)
+			.pattern("   ")
+			.pattern(" # ")
+			.pattern(" | ")
+			.input('#', ModItems.CRYSTALLIZED_FERRATINIUM_INGOT)
+			.input('|', Items.STICK)
+			.criterion(hasItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT), conditionsFromItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT))
 			.offerTo(exporter)
 			;
 	}

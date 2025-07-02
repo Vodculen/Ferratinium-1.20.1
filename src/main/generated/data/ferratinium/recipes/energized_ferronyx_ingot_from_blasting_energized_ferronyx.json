@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 10.0,
+  "group": "energized_ferronyx",
+  "ingredient": {
+    "item": "ferratinium:energized_ferronyx"
+  },
+  "result": "ferratinium:energized_ferronyx_ingot"
+}

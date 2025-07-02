@@ -16,6 +16,9 @@ public class ModItemGroups {
 		.entries((displayContext, entries) -> {
 			// Ferronyx block material and ore
 			entries.add(ModItems.FERRONYX);
+			entries.add(ModItems.ENERGIZED_FERRONYX);
+			entries.add(ModItems.ENERGIZED_FERRONYX_INGOT);
+			entries.add(ModItems.ENERGIZED_FERRONYX_POWDER);
 			entries.add(ModBlocks.FERRONYX_BLOCK);
 			entries.add(ModBlocks.FERRONYX_STAIRS);
 			entries.add(ModBlocks.FERRONYX_SLAB);
@@ -44,6 +47,6 @@ public class ModItemGroups {
 
 
 	public static void registerItemGroups() {
-		Ferratinium.LOGGER.info("Registering Item Groups for " + Ferratinium.MOD_ID);
+		Ferratinium.LOGGER.info("Registering Modded Item Groups");
 	}
 }

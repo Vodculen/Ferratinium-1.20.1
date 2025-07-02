@@ -3,7 +3,11 @@
 	"package": "net.vodculen.ferratinium.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"LightningEntityMixin",
+		"GrindstoneScreenHandlerMixin",
+		"GrindstoneScreenHandlerSlotMixin",
+		"AnvilScreenHandlerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

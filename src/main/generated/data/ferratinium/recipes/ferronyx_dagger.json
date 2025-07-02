@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    "  #",
+    "   ",
     " # ",
-    "|  "
+    " | "
   ],
   "result": {
     "item": "ferratinium:ferronyx_dagger"

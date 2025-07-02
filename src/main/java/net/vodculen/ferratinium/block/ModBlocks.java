@@ -52,6 +52,6 @@ public class ModBlocks {
 	}
 
 	public static void registerModBlocks() {
-		Ferratinium.LOGGER.info("Registering Mod Block for " + Ferratinium.MOD_ID);
+		Ferratinium.LOGGER.info("Registering Modded Block");
 	}
 }

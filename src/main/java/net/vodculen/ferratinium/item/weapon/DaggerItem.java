@@ -18,22 +18,16 @@ import net.minecraft.item.Vanishable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class Dagger extends Item implements Vanishable {
+public class DaggerItem extends Item implements Vanishable {
 	private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 	
-	public Dagger(Settings settings) {
+	public DaggerItem(Settings settings) {
 		super(settings);
 
 		// This allows the weapon to have it's speed and attack damage
 		Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
-		builder.put(
-			EntityAttributes.GENERIC_ATTACK_DAMAGE,
-			new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_ID, "Weapon modifier", 4.0, EntityAttributeModifier.Operation.ADDITION)
-		);
-		builder.put(
-			EntityAttributes.GENERIC_ATTACK_SPEED,
-			new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_ID, "Weapon modifier", -2.0, EntityAttributeModifier.Operation.ADDITION)
-		);
+		builder.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_ID, "Weapon modifier", 4.0, EntityAttributeModifier.Operation.ADDITION));
+		builder.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_ID, "Weapon modifier", -2.0, EntityAttributeModifier.Operation.ADDITION));
 		this.attributeModifiers = builder.build();			
 	}
 
