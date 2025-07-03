@@ -1,4 +1,4 @@
-// 1.20.1	2025-07-01T17:27:16.48981251	Ferratinium/Block Loot Tables
+// 1.20.1	2025-07-03T13:39:04.188046075	Ferratinium/Block Loot Tables
 b757d589f9e82f4f8ca776c83ff1b5be325b0ac0 data/ferratinium/loot_tables/blocks/deepslate_ferronyx_ore.json
 eb18326fe596e466a3b09d097d36a6e37be964cd data/ferratinium/loot_tables/blocks/deepslate_platiniam_ore.json
 89d473d0aef5d6410bbff8e1d5bc8fa97a983de5 data/ferratinium/loot_tables/blocks/ferronyx_pressure_plate.json
@@ -6,5 +6,5 @@ eb18326fe596e466a3b09d097d36a6e37be964cd data/ferratinium/loot_tables/blocks/dee
 f9c7e0709608f8c296da664381a9448d133549f0 data/ferratinium/loot_tables/blocks/ferronyx_wall.json
 cf9d6b329b942ddd374c83f614e3f84809e461ce data/ferratinium/loot_tables/blocks/ferronyx_slab.json
 85429265f7ec162dea5c676528eebd78daf0aaaa data/ferratinium/loot_tables/blocks/ferronyx_stairs.json
-b757d589f9e82f4f8ca776c83ff1b5be325b0ac0 data/ferratinium/loot_tables/blocks/ferronyx_ore.json
 f8d6d7da3055a3368922a6125e2927d2a9580d83 data/ferratinium/loot_tables/blocks/ferronyx_block.json
+b757d589f9e82f4f8ca776c83ff1b5be325b0ac0 data/ferratinium/loot_tables/blocks/ferronyx_ore.json

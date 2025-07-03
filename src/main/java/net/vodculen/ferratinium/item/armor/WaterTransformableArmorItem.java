@@ -2,12 +2,13 @@ package net.vodculen.ferratinium.item.armor;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import net.vodculen.ferratinium.item.ModItems;
 
 public class WaterTransformableArmorItem extends ArmorItem {
 	private final Item transformedItem;
@@ -20,17 +21,22 @@ public class WaterTransformableArmorItem extends ArmorItem {
 
 	@Override
 	public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-		if (!world.isClient && entity instanceof LivingEntity living && entity.isTouchingWater()) {
+		if (!world.isClient && entity instanceof PlayerEntity player && entity.isTouchingWater()) {
 			EquipmentSlot armorSlot = getSlotType();
-			ItemStack equipped = living.getEquippedStack(armorSlot);
+			ItemStack equipped = player.getEquippedStack(armorSlot);
 			ItemStack newStack = new ItemStack(transformedItem);
+			ItemStack byproduct = new ItemStack(ModItems.ENERGIZED_FERRONYX_POWDER);
+
+			newStack.setCount(stack.getCount());
+			newStack.setNbt(stack.getNbt());
 
 			if (equipped == stack && equipped.getItem() != transformedItem) {
-				newStack.setCount(stack.getCount());
-				newStack.setNbt(stack.getNbt());
-
-				living.equipStack(armorSlot, newStack);
+				player.equipStack(armorSlot, newStack);
+			} else {
+				player.getInventory().setStack(slot, newStack);
 			}
+
+			player.getInventory().insertStack(byproduct);
 		}
 
 		super.inventoryTick(stack, world, entity, slot, selected);

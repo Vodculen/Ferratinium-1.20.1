@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crystallized_ferratinium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ferratinium:crystallized_ferratinium_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ferratinium:ferratinium_chestplate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_crystallized_ferratinium_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ferratinium:ferratinium_chestplate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

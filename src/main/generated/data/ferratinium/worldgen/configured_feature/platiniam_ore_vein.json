@@ -6,6 +6,15 @@
     "targets": [
       {
         "state": {
+          "Name": "ferratinium:platiniam_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
+        }
+      },
+      {
+        "state": {
           "Name": "ferratinium:deepslate_platiniam_ore"
         },
         "target": {

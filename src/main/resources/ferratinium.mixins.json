@@ -6,8 +6,7 @@
 		"ExampleMixin",
 		"LightningEntityMixin",
 		"GrindstoneScreenHandlerMixin",
-		"GrindstoneScreenHandlerSlotMixin",
-		"AnvilScreenHandlerMixin"
+		"GrindstoneScreenHandlerSlotMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

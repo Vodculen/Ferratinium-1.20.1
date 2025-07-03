@@ -14,6 +14,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 	public void generate() {
 		addDrop(ModBlocks.FERRONYX_ORE, ModItems.FERRONYX);
 		addDrop(ModBlocks.DEEPSLATE_FERRONYX_ORE, ModItems.FERRONYX);
+		addDrop(ModBlocks.PLATINIAM_ORE, ModItems.RAW_PLATINIAM);
 		addDrop(ModBlocks.DEEPSLATE_PLATINIAM_ORE, ModItems.RAW_PLATINIAM);
 		addDrop(ModBlocks.FERRONYX_BLOCK);
 		addDrop(ModBlocks.FERRONYX_STAIRS);

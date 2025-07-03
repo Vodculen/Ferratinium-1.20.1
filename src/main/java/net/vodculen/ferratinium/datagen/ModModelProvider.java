@@ -18,6 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
 	public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 		blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FERRONYX_ORE);
 		blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_FERRONYX_ORE);
+		blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINIAM_ORE);
 		blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_PLATINIAM_ORE);
 
 		// Ferronyx Block Materials
@@ -32,16 +33,28 @@ public class ModModelProvider extends FabricModelProvider {
 	@Override
 	public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 		itemModelGenerator.register(ModItems.FERRONYX, Models.GENERATED);
+		itemModelGenerator.register(ModItems.ENERGIZED_FERRONYX, Models.GENERATED);
+		itemModelGenerator.register(ModItems.ENERGIZED_FERRONYX_INGOT, Models.GENERATED);
+		itemModelGenerator.register(ModItems.ENERGIZED_FERRONYX_POWDER, Models.GENERATED);
+		itemModelGenerator.register(ModItems.FERRONYX_DAGGER, Models.HANDHELD);
 		itemModelGenerator.register(ModItems.FERRONYX_SWORD, Models.HANDHELD);
 		itemModelGenerator.register(ModItems.FERRONYX_AXE, Models.HANDHELD);
+		
 		itemModelGenerator.register(ModItems.RAW_PLATINIAM, Models.GENERATED);
 		itemModelGenerator.register(ModItems.PLATINIAM_INGOT, Models.GENERATED);
-		itemModelGenerator.register(ModItems.FERRONYX_DAGGER, Models.HANDHELD);
-
 		itemModelGenerator.registerArmor(((ArmorItem) ModItems.PLATINIAM_HELMET));
 		itemModelGenerator.registerArmor(((ArmorItem) ModItems.PLATINIAM_CHESTPLATE));
 		itemModelGenerator.registerArmor(((ArmorItem) ModItems.PLATINIAM_LEGGINGS));
 		itemModelGenerator.registerArmor(((ArmorItem) ModItems.PLATINIAM_BOOTS));
+
+		itemModelGenerator.register(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT, Models.GENERATED);
+		itemModelGenerator.register(ModItems.FERRATINIUM_DAGGER, Models.HANDHELD);
+		itemModelGenerator.register(ModItems.FERRATINIUM_SWORD, Models.HANDHELD);
+		itemModelGenerator.register(ModItems.FERRATINIUM_AXE, Models.HANDHELD);
+		itemModelGenerator.registerArmor(((ArmorItem) ModItems.FERRATINIUM_HELMET));
+		itemModelGenerator.registerArmor(((ArmorItem) ModItems.FERRATINIUM_CHESTPLATE));
+		itemModelGenerator.registerArmor(((ArmorItem) ModItems.FERRATINIUM_LEGGINGS));
+		itemModelGenerator.registerArmor(((ArmorItem) ModItems.FERRATINIUM_BOOTS));
 	}
 
 }

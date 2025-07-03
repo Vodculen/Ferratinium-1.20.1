@@ -18,6 +18,7 @@ public class ModBlockTagProvider extends BlockTagProvider {
 		getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
 			.add(ModBlocks.FERRONYX_ORE)
 			.add(ModBlocks.DEEPSLATE_FERRONYX_ORE)
+			.add(ModBlocks.PLATINIAM_ORE)
 			.add(ModBlocks.DEEPSLATE_PLATINIAM_ORE)
 			.add(ModBlocks.FERRONYX_BLOCK)
 			;
@@ -25,6 +26,7 @@ public class ModBlockTagProvider extends BlockTagProvider {
 		getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
 			.add(ModBlocks.FERRONYX_ORE)
 			.add(ModBlocks.DEEPSLATE_FERRONYX_ORE)
+			.add(ModBlocks.PLATINIAM_ORE)
 			.add(ModBlocks.DEEPSLATE_PLATINIAM_ORE)	
 			.add(ModBlocks.FERRONYX_BLOCK)
 			;

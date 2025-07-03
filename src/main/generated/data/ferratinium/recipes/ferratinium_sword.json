@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "ferratinium:crystallized_ferratinium_ingot"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " | "
+  ],
+  "result": {
+    "item": "ferratinium:ferratinium_sword"
+  },
+  "show_notification": true
+}

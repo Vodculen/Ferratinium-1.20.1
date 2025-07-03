@@ -1,5 +1,5 @@
-// 1.20.1	2025-07-01T17:27:16.496673216	Ferratinium/World Gen
+// 1.20.1	2025-07-03T13:39:04.200109761	Ferratinium/World Gen
 9e7ca62c455b6252d9c895def1f7bdf5a14d5890 data/ferratinium/worldgen/placed_feature/ferronyx_ore_vein_placed.json
 8919d64d70529391000a365c0ec63c1163625b1a data/ferratinium/worldgen/placed_feature/platiniam_ore_vein_placed.json
-3146eb8aab7b84a31b044587a38f04bde1a2d81a data/ferratinium/worldgen/configured_feature/platiniam_ore_vein.json
+e0561d5ac95a2fb7d04e3e9cf624f7418cc6491f data/ferratinium/worldgen/configured_feature/platiniam_ore_vein.json
 ace9c7fbbfd9fd5e78f460017f5fed8fe9672c8c data/ferratinium/worldgen/configured_feature/ferronyx_ore_vein.json

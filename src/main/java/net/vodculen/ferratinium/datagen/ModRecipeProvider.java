@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -164,6 +165,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 			.input('#', ModItems.CRYSTALLIZED_FERRATINIUM_INGOT)
 			.input('|', Items.STICK)
 			.criterion(hasItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT), conditionsFromItem(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT))
+			.offerTo(exporter)
+			;
+
+		ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CRYSTALLIZED_FERRATINIUM_INGOT)
+			.input(ModItems.ENERGIZED_FERRONYX_POWDER)
+			.input(ModItems.PLATINIAM_INGOT)
+			.criterion(hasItem(ModItems.ENERGIZED_FERRONYX_POWDER), conditionsFromItem(ModItems.ENERGIZED_FERRONYX_POWDER))
+			.criterion(hasItem(ModItems.PLATINIAM_INGOT), conditionsFromItem(ModItems.PLATINIAM_INGOT))
 			.offerTo(exporter)
 			;
 	}

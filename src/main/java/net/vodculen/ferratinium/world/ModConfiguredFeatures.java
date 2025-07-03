@@ -30,6 +30,7 @@ public class ModConfiguredFeatures {
 		);
 
 		List<OreFeatureConfig.Target> overworldPlatiniamOres = List.of(
+			OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.PLATINIAM_ORE.getDefaultState()),
 			OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_PLATINIAM_ORE.getDefaultState())
 		);
 
