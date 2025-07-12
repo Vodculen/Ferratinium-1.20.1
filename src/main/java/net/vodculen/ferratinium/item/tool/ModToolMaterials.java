@@ -7,8 +7,8 @@ import net.minecraft.recipe.Ingredient;
 import net.vodculen.ferratinium.item.ModItems;
 
 public enum ModToolMaterials implements ToolMaterial {
-	FERRONYX_MATERIAL(2, 256, 6.0F, 2.5F, 14, () ->  Ingredient.ofItems(ModItems.FERRONYX)),
-	FERRATINIUM_MATERIAL(4, 1012, 7.0F, 2.5F, 18, () ->  Ingredient.ofItems(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT));
+	FERRONYX_MATERIAL(2, 256, 6.0F, 3F, 14, () ->  Ingredient.ofItems(ModItems.FERRONYX)),
+	FERRATINIUM_MATERIAL(4, 1012, 7.0F, 4F, 18, () ->  Ingredient.ofItems(ModItems.CRYSTALLIZED_FERRATINIUM_INGOT));
 
 	private final int miningLevel;
 	private final int itemDurability;
